@@ -1,0 +1,29 @@
+{
+  "name": "frithhilton-website",
+  "type": "module",
+  "version": "2.6.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.0",
+    "@astrojs/cloudflare": "^12.0.0",
+    "@astrojs/sitemap": "^3.6.0",
+    "@astrojs/tailwind": "^6.0.2",
+    "astro": "^5.15.4",
+    "epubjs": "^0.3.93",
+    "nanostores": "^0.11.3",
+    "vanilla-cookieconsent": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0",
+    "sass-embedded": "^1.93.2",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.0.0"
+  }
+}
