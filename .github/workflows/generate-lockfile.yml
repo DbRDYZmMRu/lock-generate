@@ -1,0 +1,42 @@
+name: Generate and Commit Lockfile
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write  # Crucial: Allows the bot to push changes
+
+jobs:
+  build-lock:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: |
+          if [ -f package.json ]; then
+            npm install
+          else
+            echo "Error: package.json not found!"
+            exit 1
+          fi
+
+      - name: Commit and Push Lockfile
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Only commit if the file was actually created/changed
+          if [ -f package-lock.json ]; then
+            git add package-lock.json
+            git commit -m "chore: auto-generate package-lock.json"
+            git push
+          else
+            echo "No lockfile found to commit."
+          fi
