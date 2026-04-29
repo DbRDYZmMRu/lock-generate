@@ -1,7 +1,7 @@
 {
   "name": "frithhilton-website",
   "type": "module",
-  "version": "2.6.1",
+  "version": "2.6.2",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -13,7 +13,8 @@
     "@astrojs/cloudflare": "^12.0.0",
     "@astrojs/sitemap": "^3.6.0",
     "@astrojs/tailwind": "^6.0.2",
-    "@noble/ed25519": "^1.2.6",
+    "@noble/ed25519": "^3.1.0",
+    "@noble/hashes": "^2.2.0",
     "astro": "^5.15.4",
     "epubjs": "^0.3.93",
     "nanostores": "^0.11.3",
