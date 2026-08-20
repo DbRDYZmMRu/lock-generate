@@ -14,21 +14,23 @@
     "@astrojs/sitemap": "^3.6.0",
     "@astrojs/tailwind": "^6.0.2",
     "astro": "^5.15.4",
+    "colorthief": "3.3.1",
     "epubjs": "^0.3.93",
+    "html2pdf.js": "1.1.4",
     "nanostores": "^0.11.3",
-    "vanilla-cookieconsent": "^3.0.0",
-    "colorthief": "3.3.1"
+    "vanilla-cookieconsent": "^3.0.0"
   },
   "devDependencies": {
+    "@types/html2pdf.js": "1.1.4",
     "@types/node": "^22.0.0",
     "@vite-pwa/astro": "^1.2.0",
-    "vite-plugin-pwa": "^1.2.0",
-    "workbox-window": "^7.4.0",
     "prettier": "^3.0.3",
     "prettier-plugin-astro": "^0.12.0",
     "sass-embedded": "^1.93.2",
     "tailwindcss": "^3.4.0",
     "tinyexec": "^0.3.2",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "vite-plugin-pwa": "^1.2.0",
+    "workbox-window": "^7.4.0"
   }
 }
