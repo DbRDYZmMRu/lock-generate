@@ -16,12 +16,12 @@
     "astro": "^5.15.4",
     "colorthief": "3.3.1",
     "epubjs": "^0.3.93",
-    "html2pdf.js": "1.1.4",
+    "html2pdf.js": "0.14.0",
     "nanostores": "^0.11.3",
     "vanilla-cookieconsent": "^3.0.0"
   },
   "devDependencies": {
-    "@types/html2pdf.js": "1.1.4",
+    "@types/html2pdf.js": "0.14.0",
     "@types/node": "^22.0.0",
     "@vite-pwa/astro": "^1.2.0",
     "prettier": "^3.0.3",
